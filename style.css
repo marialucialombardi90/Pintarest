@@ -1,0 +1,129 @@
+
+    .overlay {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity:0.2;
+    display: none; 
+    top: 0;
+    left: 0;
+
+    }
+
+    .Pintarest:hover .overlay {
+        display: block;
+
+    }   
+
+    .Pintarest {
+    
+    position: relative;
+    width: 330px;
+    height: 420px;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    overflow: hidden;
+
+
+    }
+
+    .Pintarest img {
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    
+    .Pintarest:hover #buttonSave {
+        opacity: 1;
+        transition: all 300ms linear;
+
+    }
+     
+     #buttonSave {
+     
+     font-weight: bold;
+     text-align: center;
+     position: absolute;
+     top: 30px;
+     right: 10px;
+     opacity: 0;
+     background-color: red;
+     color: white;
+     border: none;
+     border-radius: 50%;
+     padding: 10px 20px;
+     cursor: pointer;
+     
+      
+     }
+
+    .Pintarest:hover #bottondown {
+
+      opacity: 1;
+      bottom: 10px;
+    }
+
+    #bottondown {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        position: absolute;
+        bottom: 40px;
+        left: 25px;
+        opacity: 0;
+        transition : all 300ms linear;
+
+    }  
+
+    #westinggs {
+
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 50%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin-right: 40px;
+    }
+
+    #arrow {
+
+        display: inline-block;
+        font-weight: bold;
+        border-radius: 50%;
+        border: none;
+        background-color: rgb(244, 241, 241);
+        padding: 10px 15px;
+    }
+    #tre {
+        display: inline-block;
+        border-radius: 50%;
+        font-weight: bold;
+        border: none;
+        background-color: rgb(244, 241, 241);
+        padding: 10px 12px;
+
+    }
+
+    #westinggs .arrow-right-up {
+        height: 20px;
+        width: 20px;
+    }
+
+    #arrow .arrow-bracket{
+        height: 20px;
+        width: 20px;
+    }
+
+    #tre .ellipsis {
+        height: 20px;
+        width: 20px;
+    }
